@@ -6,3 +6,8 @@ export function extractPrice(...elements: any)  {
     }
     return '';
 }
+
+export function extractCurrency(element: any) {
+    const currentText = element.text().trim().slice(0, 1);
+    return currentText ? currentText : '';
+}
